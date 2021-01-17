@@ -10,24 +10,18 @@ import NavBar from './components/NavBar'
 //actions import 
 
 //router import
-import { BrowserRouter as Router , Route , Switch } from 'react-router-dom'
-
-
-
+import {  Route , Switch } from 'react-router-dom'
 
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Router>
       <Switch>
-      <Route exact to="/" component={SignIN}/>
-      <Route to="/page1" component={Page1}/>
-      <Route to="/page2" component={Page1}/>
-
+      <Route exact path="/" component={SignIN}/>
+      <Route path="/page1" component={Page1}/>
+      <Route path="/page2" component={Page2}/>
       </Switch>
-      </Router>
   
     </div>
   );

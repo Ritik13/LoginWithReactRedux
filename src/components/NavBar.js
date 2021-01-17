@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 function NavBar() {
     return (
         <div>
-            <Link to="/"> Sign IN </Link>
-            <Link to="/page1"> Page 1 </Link>
-            <Link to="page2"> pahge 2 </Link>
+            <Link to="/"> <p>Sign IN </p></Link>
+            <Link to="/page1"> <p>Page 1</p> </Link>
+            <Link to="page2"> <p>Page 2 </p></Link>
 
         </div>
     )
